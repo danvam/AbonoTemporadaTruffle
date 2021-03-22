@@ -1,0 +1,574 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "porcentajeAlquiler",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "dineroAbono",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "tipoLocalidad",
+						"type": "uint8"
+					},
+					{
+						"name": "nameLocalidad",
+						"type": "string"
+					},
+					{
+						"name": "symbolLocalidad",
+						"type": "string"
+					},
+					{
+						"name": "uriLocalidad",
+						"type": "string"
+					}
+				],
+				"name": "creaLocalidad",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "tiposLocalidad",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "actualIdLocalidad",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "faseTemporada",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "factorIncrementoTipo",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "iniciaTemporada",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "precioBase",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "fechaEspectaculo",
+						"type": "uint256"
+					},
+					{
+						"name": "nameEspectaculo",
+						"type": "string"
+					},
+					{
+						"name": "symbolEspectaculo",
+						"type": "string"
+					},
+					{
+						"name": "uriEspectaculo",
+						"type": "string"
+					}
+				],
+				"name": "creaEspectaculo",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "localidadId",
+						"type": "uint8"
+					},
+					{
+						"name": "espectaculoId",
+						"type": "uint8"
+					}
+				],
+				"name": "alquilaAbono",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "nameAbono",
+						"type": "string"
+					},
+					{
+						"name": "symbolAbono",
+						"type": "string"
+					},
+					{
+						"name": "uriAbonado",
+						"type": "string"
+					},
+					{
+						"name": "localidadId",
+						"type": "uint8"
+					}
+				],
+				"name": "compraAbono",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "iniciaPeriodoAbono",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "localidadId",
+						"type": "uint8"
+					},
+					{
+						"name": "_fechaDesde",
+						"type": "uint256"
+					},
+					{
+						"name": "_fechaHasta",
+						"type": "uint256"
+					}
+				],
+				"name": "actualizaFechas",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "actualIdAbono",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "nombre",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "finalizaTemporada",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "actualIdEspectaculo",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"name": "nameTemporada",
+						"type": "string"
+					},
+					{
+						"name": "dineroInicial",
+						"type": "uint256"
+					},
+					{
+						"name": "_precioBase",
+						"type": "uint8"
+					},
+					{
+						"name": "_tiposLocalidad",
+						"type": "uint8"
+					},
+					{
+						"name": "_factorIncrementoTipo",
+						"type": "uint8"
+					},
+					{
+						"name": "_porcentajeAlquiler",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "localidad",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "id",
+						"type": "uint8"
+					}
+				],
+				"name": "LoalidadCreada",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "espectaculo",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "id",
+						"type": "uint8"
+					}
+				],
+				"name": "EspectaculoCreado",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "abono",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "id",
+						"type": "uint8"
+					}
+				],
+				"name": "AbonoComprado",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "abono",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "id",
+						"type": "uint8"
+					}
+				],
+				"name": "AbonoAlquilado",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "abono",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "id",
+						"type": "uint8"
+					}
+				],
+				"name": "FechaActualizada",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/Temporada.sol": "Temporada"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"localhost/Abono.sol": {
+			"keccak256": "0x7087f64901b2d2b577ee44971b2244e1d45c76ebdf85f377a6982b635ed9bf54",
+			"urls": [
+				"bzzr://9d1f332d0718dac009452bdb68a2d01ea53c15efe1893143e670ee240b89a666"
+			]
+		},
+		"localhost/DAbono.sol": {
+			"keccak256": "0xf0a841313ee35193c766c1b230c1f8872bcfc0a09f0658da7ad5a1b51e73847c",
+			"urls": [
+				"bzzr://8bb20054ceee7043bd8c8831a051393b4420ae649dbef16c244e2949d990ec3e"
+			]
+		},
+		"localhost/DatosTemporada.sol": {
+			"keccak256": "0x26af8731bce817481c52ed13cad7d96d9416dc228362f7fe78a58df3925526ca",
+			"urls": [
+				"bzzr://69deb408f6336d1e71bbf6d85a293d41bb6a0c9d64070d999fcf81baf0854614"
+			]
+		},
+		"localhost/Espectaculo.sol": {
+			"keccak256": "0xac1d72463367813ca588d42c6cb465d1ab7e7c2c9e06c819be6af6a67e3ab7f2",
+			"urls": [
+				"bzzr://dda793a21b433f733c906857bf9273d5cf547d0135cb767a14d0aea14f535132"
+			]
+		},
+		"localhost/Localidad.sol": {
+			"keccak256": "0x8cf728239c5818d0488236c0d115ee24da5d4ffb422d1a4088df5849822f20f9",
+			"urls": [
+				"bzzr://71809f81be66ccff52c377a304d8e989acc81576080dd3d0a7ff698ea64343ff"
+			]
+		},
+		"localhost/Metadata.sol": {
+			"keccak256": "0xd954296851367199129d3f74fd7b6c639c91ae44cd32d882281e1485ac797372",
+			"urls": [
+				"bzzr://80d66610829ab615b50d16a40e2415ef9b027ed8e10c2aff1409722b7aba2fc9"
+			]
+		},
+		"localhost/Ownable.sol": {
+			"keccak256": "0x84b6c3f73311fe4c265a79b62e20fc0700072fb6ba5fb9ba2bd7b085e20ed6f1",
+			"urls": [
+				"bzzr://0cf8c9f3827c1981b1c50a252bcdc6774447eb66311e6fce10a77dfe7f13cac2"
+			]
+		},
+		"localhost/Temporada.sol": {
+			"keccak256": "0x3728924efb64e49c2377bf7893b359523ea366003666697fb08ab93fd4ac8cff",
+			"urls": [
+				"bzzr://6b43ef53272c19354ddc1c723c7b9c243ae3578ecf4afc6bbefbede6db508909"
+			]
+		},
+		"localhost/contracts/introspection/ERC165.sol": {
+			"keccak256": "0x4b7afe6f95236ed0194bb9c00175821af7a10247aebb61fbf87a3f91b71417e8",
+			"urls": [
+				"bzzr://1198bd8d76d65bedfa02a8c82a17329d5eabdd1f1fe9b7611755d847c514621c"
+			]
+		},
+		"localhost/contracts/introspection/IERC165.sol": {
+			"keccak256": "0x7b56777abad551b0d6f2644d9a45ee2c33fa1fdbb39783afc5d080c6009cadd5",
+			"urls": [
+				"bzzr://f92df08157533aebd638fec5dca9e51e64daba1194eab298ad498832b5267819"
+			]
+		},
+		"localhost/contracts/math/SafeMath.sol": {
+			"keccak256": "0xdd18f05c74536a06166c90a17ec3c6932853764f292bed314ceb23e730ff83af",
+			"urls": [
+				"bzzr://1d8a608339978ac18782f7051816cf23b4072d8814979e3ef74788cc6025cca0"
+			]
+		},
+		"localhost/contracts/token/ERC20/ERC20.sol": {
+			"keccak256": "0xaa2cf35177f37a9af9c975a973c813c5520be56ccee3a39b6c9883d4781cd072",
+			"urls": [
+				"bzzr://2244d517ff73299ad9b6c9dcb7d0788e5e452d8b1624d3027c1fb152135de8f4"
+			]
+		},
+		"localhost/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0xc8a7f15fa44eb10057f8bcb58418d3aed6f5267d211d18f93f3d4e0293e3da44",
+			"urls": [
+				"bzzr://8825e2508348b01a091ff47b8525e583b6e5604f6679684f805d67a9a6a2a7e9"
+			]
+		},
+		"localhost/contracts/token/ERC721/ERC721.sol": {
+			"keccak256": "0xa430b30d064ad59c0c683f79e1c607c44aa804883770614d2f7f7a2441be0cbe",
+			"urls": [
+				"bzzr://56973f95c2d7e1693e9f8385732a9ce0b5c0016a7fd334ea814584e9b3aaaa71"
+			]
+		},
+		"localhost/contracts/token/ERC721/ERC721Metadata.sol": {
+			"keccak256": "0xb8c19c037a6a5745c75b103eb11bb5b1ce15674f84c5332dcaead2482393802f",
+			"urls": [
+				"bzzr://b6634168c40a5802092c1ec877ecd0b75780a53300ea6dcd2fa42489736b3a2b"
+			]
+		},
+		"localhost/contracts/token/ERC721/IERC721.sol": {
+			"keccak256": "0x0c2b837976bc56d2c09653a72cfa93ef0a4ff737149354a31110ec728c42bc20",
+			"urls": [
+				"bzzr://2550cd8c574658d26f2d722a35c19ed4c81f839c1f7b1c3391f24fbcd8fd90ca"
+			]
+		},
+		"localhost/contracts/token/ERC721/IERC721Metadata.sol": {
+			"keccak256": "0x4e2ed99dcba183922f23e553a507ab285fb5881495b4f4251e0dabb1d2d28463",
+			"urls": [
+				"bzzr://ccf69060b33cd1f53b1bfbae96072387a5065f7ed5288cf183e0c26dbfba9b6e"
+			]
+		},
+		"localhost/contracts/token/ERC721/IERC721Receiver.sol": {
+			"keccak256": "0xa46160d26ec4883c6f92cc728676ba9ddcdfb108b2d4851b1ddb46dc384ecef2",
+			"urls": [
+				"bzzr://4fdfcbd36d61919d06c43640295802230c0bcebb304b2bd531c65458f33d1a0e"
+			]
+		},
+		"localhost/contracts/utils/Address.sol": {
+			"keccak256": "0xca801bd2d5d764e9f245b69d6a01cd08e1884daef13abf34f95cb6d921f9860e",
+			"urls": [
+				"bzzr://224784dbf4b6efec577efccc0f1713b0f4dca878b7930ca0b819316054656143"
+			]
+		}
+	},
+	"version": 1
+}

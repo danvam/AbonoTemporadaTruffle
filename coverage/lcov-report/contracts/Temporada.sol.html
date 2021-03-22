@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for contracts/Temporada.sol</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">contracts/</a> Temporada.sol
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>58/58</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">57.14% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>16/28</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>7/7</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>57/57</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">pragma solidity ^0.4.24;
+&nbsp;
+import "./Localidad.sol";
+import "./DAbono.sol";
+import "./Abono.sol";
+import "./Espectaculo.sol";
+import "./DatosTemporada.sol";
+&nbsp;
+contract Temporada is DatosTemporada{
+   
+    event LoalidadCreada(address localidad, uint8 id);
+    event EspectaculoCreado(address espectaculo, uint8 id);
+    event AbonoComprado(address abono, uint8 id);
+    event AbonoAlquilado(address abono, uint8 id);
+    event FechaActualizada(address abono, uint8 id);
+    
+    mapping (uint8 =&gt; Localidad) private localidades; // registrará las localidades creadas según su id
+    mapping (uint8 =&gt; Espectaculo) private espectaculos; // registrará los espectáculos creados según su id
+    mapping (uint8 =&gt; Abono) private localidadAbono; // registrará en cada id de la localidad el abono asociado
+    mapping (address =&gt; uint8) private abonadoLocalidad; // para una dirección me devuelve la localidad que posee en su abono
+    
+    constructor(string nameTemporada, uint256 dineroInicial, uint8 _precioBase, uint8 _tiposLocalidad, uint8 _factorIncrementoTipo, uint8 _porcentajeAlquiler) public{
+        nombre = nameTemporada;
+        precioBase = _precioBase;
+        tiposLocalidad = _tiposLocalidad;
+        factorIncrementoTipo = _factorIncrementoTipo;
+        porcentajeAlquiler = _porcentajeAlquiler;
+        dineroAbono = new DAbono(msg.sender, dineroInicial);
+    }
+     
+     function creaLocalidad(uint8 tipoLocalidad, string nameLocalidad, string symbolLocalidad, string uriLocalidad) public onlyOwner {
+        <span class="missing-if-branch" title="else path not taken" >E</span>require(faseTemporada == Etapa.Creacion, "Sólo se permiten añadir más localidades en fase de creación");
+        <span class="missing-if-branch" title="else path not taken" >E</span>require(tipoLocalidad &gt;= 0 &amp;&amp; tipoLocalidad &lt;= tiposLocalidad, "Sólo se permiten localidades del rango de tipos definidos ");
+        Localidad localidad = new Localidad(nameLocalidad, symbolLocalidad, tipoLocalidad, actualIdLocalidad + 1);
+        localidades[actualIdLocalidad + 1] = localidad;
+        localidad.mint(owner);
+        localidad.setTokenURI(1, uriLocalidad);
+        localidad.transferOwnership(owner);
+        actualIdLocalidad = actualIdLocalidad + 1;
+        emit LoalidadCreada(address(localidad), actualIdLocalidad);
+    }
+&nbsp;
+    function creaEspectaculo(uint fechaEspectaculo, string nameEspectaculo, string symbolEspectaculo, string uriEspectaculo) public onlyOwner {
+        <span class="missing-if-branch" title="else path not taken" >E</span>require(faseTemporada == Etapa.Creacion, "Sólo se permiten añadir más espectáculos en fase de creación");
+        Espectaculo espectaculo = new Espectaculo(nameEspectaculo, symbolEspectaculo, fechaEspectaculo, actualIdEspectaculo + 1);
+        espectaculos[actualIdEspectaculo + 1] = espectaculo;
+        espectaculo.mint(owner);
+        espectaculo.setTokenURI(1, uriEspectaculo);
+         espectaculo.transferOwnership(owner);
+        actualIdEspectaculo = actualIdEspectaculo + 1;
+        emit EspectaculoCreado(address(espectaculo), actualIdEspectaculo);
+    }
+&nbsp;
+    function compraAbono(string nameAbono, string symbolAbono, string uriAbonado, uint8 localidadId) public {
+        <span class="missing-if-branch" title="else path not taken" >E</span>require(faseTemporada == Etapa.Abono, "Sólo se permite contratar un abono en fase de abono");
+        <span class="missing-if-branch" title="else path not taken" >E</span>require(address(localidades[localidadId]) != address(0), "No existe la localidad");
+        <span class="missing-if-branch" title="else path not taken" >E</span>require(address(localidadAbono[localidadId]) == address(0), "La localidad solicitada ya ha sido comprada");
+        
+        uint8 precioCalculado = (precioBase + (localidades[localidadId].tipoLocalidad() * factorIncrementoTipo )) * actualIdEspectaculo;
+        
+        <span class="missing-if-branch" title="else path not taken" >E</span>if(dineroAbono.transferFrom(msg.sender, owner, precioCalculado)){  
+            Abono abono = creaAbono(msg.sender,nameAbono, symbolAbono, uriAbonado,  localidadId, 0);
+            abonadoLocalidad[msg.sender]=localidadId;
+            emit AbonoComprado(address(abono), actualIdAbono);
+        }
+    }
+&nbsp;
+    function alquilaAbono(uint8 localidadId, uint8 espectaculoId) public {
+        <span class="missing-if-branch" title="else path not taken" >E</span>require(faseTemporada == Etapa.Iniciada, "Sólo se permite alquilar un abono cuando la temporada está en curso");
+        <span class="missing-if-branch" title="else path not taken" >E</span>require(address(localidades[localidadId]) != address(0), "No existe la localidad");
+&nbsp;
+        Abono abono = localidadAbono[localidadId];
+         
+        require(address(abono) == address(0) || abono.estaDisponibleAlquiler(espectaculos[espectaculoId].fechaEspectaculo(), espectaculoId), "No está disponible la localidad para el espectáculo seleccionado");
+        uint256 precioCalculado = (precioBase + (localidades[localidadId].tipoLocalidad() * factorIncrementoTipo));
+        
+        // El usuario ha de permitir transferir el coste del alquiler de abono al contrato temporada
+        <span class="missing-if-branch" title="else path not taken" >E</span>if(dineroAbono.balanceOf(msg.sender) &gt;= precioCalculado){
+&nbsp;
+            uint256 dineroAbonado = 0;
+            if(address(abono) != address(0) &amp;&amp; abono.owner() != owner){ // existe y no es abono creado por la empresa
+                <span class="missing-if-branch" title="else path not taken" >E</span>require(abono.owner() != msg.sender, "El abonado no puede alquiar su propio abono");
+                dineroAbonado = precioCalculado * porcentajeAlquiler / 100;
+                dineroAbono.transferFrom(msg.sender, abono.owner(), dineroAbonado);
+            }else <span class="missing-if-branch" title="else path not taken" >E</span>if(address(abono) == address(0)){
+                abono = creaAbono(owner,"Alquiler", "A", "datosTemporada", localidadId, 1); // Inicializa fechaDesde para permitir cualquier alquiler
+            }
+            uint256 dineroEmpresa = precioCalculado - dineroAbonado;
+            dineroAbono.transferFrom(msg.sender, owner, dineroEmpresa);
+            abono.estableceAlquier(espectaculoId, msg.sender);
+            
+            emit AbonoAlquilado(address(abono), actualIdAbono);
+        }
+    }
+    
+    function creaAbono(address _owner,string _name, string _symbol, string _uri, uint8 _localidadId, uint _fecha) private returns (Abono){
+        Abono abono = new Abono(_name, _symbol, actualIdAbono + 1);
+        abono.actualizaFechas(_fecha, 0);
+        localidadAbono[_localidadId] = abono;
+        abono.mint(_owner);
+        abono.setTokenURI(1, _uri);
+        abono.transferOwnership(_owner);
+        actualIdAbono = actualIdAbono + 1;
+        
+        return abono;
+    }
+    
+    function actualizaFechas(uint8 localidadId, uint _fechaDesde, uint _fechaHasta) public{
+        localidadAbono[localidadId].actualizaFechas(_fechaDesde, _fechaHasta);
+        emit FechaActualizada(address(localidadAbono[localidadId]), localidadAbono[localidadId].idAbono());
+    }
+}</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Mar 16 2021 18:05:53 GMT+0100 (Central European Standard Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

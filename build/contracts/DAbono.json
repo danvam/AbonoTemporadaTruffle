@@ -1,0 +1,1011 @@
+{
+  "contractName": "DAbono",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "name",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "spender",
+          "type": "address"
+        },
+        {
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "approve",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totalSupply",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "transferFrom",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "spender",
+          "type": "address"
+        },
+        {
+          "name": "addedValue",
+          "type": "uint256"
+        }
+      ],
+      "name": "increaseAllowance",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "name": "balanceOf",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "symbol",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "spender",
+          "type": "address"
+        },
+        {
+          "name": "subtractedValue",
+          "type": "uint256"
+        }
+      ],
+      "name": "decreaseAllowance",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "transfer",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "name": "spender",
+          "type": "address"
+        }
+      ],
+      "name": "allowance",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_temporadaOwner",
+          "type": "address"
+        },
+        {
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Transfer",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "spender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Approval",
+      "type": "event"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"spender\",\"type\":\"address\"},{\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"from\",\"type\":\"address\"},{\"name\":\"to\",\"type\":\"address\"},{\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"spender\",\"type\":\"address\"},{\"name\":\"addedValue\",\"type\":\"uint256\"}],\"name\":\"increaseAllowance\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"spender\",\"type\":\"address\"},{\"name\":\"subtractedValue\",\"type\":\"uint256\"}],\"name\":\"decreaseAllowance\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"to\",\"type\":\"address\"},{\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"transfer\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"owner\",\"type\":\"address\"},{\"name\":\"spender\",\"type\":\"address\"}],\"name\":\"allowance\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"name\":\"_temporadaOwner\",\"type\":\"address\"},{\"name\":\"_amount\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"spender\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{\"allowance(address,address)\":{\"details\":\"Function to check the amount of tokens that an owner allowed to a spender.\",\"params\":{\"owner\":\"address The address which owns the funds.\",\"spender\":\"address The address which will spend the funds.\"},\"return\":\"A uint256 specifying the amount of tokens still available for the spender.\"},\"approve(address,uint256)\":{\"details\":\"Approve the passed address to spend the specified amount of tokens on behalf of msg.sender. Beware that changing an allowance with this method brings the risk that someone may use both the old and the new allowance by unfortunate transaction ordering. One possible solution to mitigate this race condition is to first reduce the spender's allowance to 0 and set the desired value afterwards: https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729\",\"params\":{\"spender\":\"The address which will spend the funds.\",\"value\":\"The amount of tokens to be spent.\"}},\"balanceOf(address)\":{\"details\":\"Gets the balance of the specified address.\",\"params\":{\"owner\":\"The address to query the balance of.\"},\"return\":\"An uint256 representing the amount owned by the passed address.\"},\"decreaseAllowance(address,uint256)\":{\"details\":\"Decrease the amount of tokens that an owner allowed to a spender. approve should be called when allowed_[_spender] == 0. To decrement allowed value is better to use this function to avoid 2 calls (and wait until the first transaction is mined) From MonolithDAO Token.sol\",\"params\":{\"spender\":\"The address which will spend the funds.\",\"subtractedValue\":\"The amount of tokens to decrease the allowance by.\"}},\"increaseAllowance(address,uint256)\":{\"details\":\"Increase the amount of tokens that an owner allowed to a spender. approve should be called when allowed_[_spender] == 0. To increment allowed value is better to use this function to avoid 2 calls (and wait until the first transaction is mined) From MonolithDAO Token.sol\",\"params\":{\"addedValue\":\"The amount of tokens to increase the allowance by.\",\"spender\":\"The address which will spend the funds.\"}},\"totalSupply()\":{\"details\":\"Total number of tokens in existence\"},\"transfer(address,uint256)\":{\"details\":\"Transfer token for a specified address\",\"params\":{\"to\":\"The address to transfer to.\",\"value\":\"The amount to be transferred.\"}},\"transferFrom(address,address,uint256)\":{\"details\":\"Transfer tokens from one address to another\",\"params\":{\"from\":\"address The address which you want to send tokens from\",\"to\":\"address The address which you want to transfer to\",\"value\":\"uint256 the amount of tokens to be transferred\"}}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/dvm/Documents/Development/WorkspaceEB/TFE/TruffleProject/contracts/DAbono.sol\":\"DAbono\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":400},\"remappings\":[]},\"sources\":{\"/Users/dvm/Documents/Development/WorkspaceEB/TFE/TruffleProject/contracts/DAbono.sol\":{\"keccak256\":\"0xf0a841313ee35193c766c1b230c1f8872bcfc0a09f0658da7ad5a1b51e73847c\",\"urls\":[\"bzzr://8bb20054ceee7043bd8c8831a051393b4420ae649dbef16c244e2949d990ec3e\"]},\"/Users/dvm/Documents/Development/WorkspaceEB/TFE/TruffleProject/contracts/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xdd18f05c74536a06166c90a17ec3c6932853764f292bed314ceb23e730ff83af\",\"urls\":[\"bzzr://1d8a608339978ac18782f7051816cf23b4072d8814979e3ef74788cc6025cca0\"]},\"/Users/dvm/Documents/Development/WorkspaceEB/TFE/TruffleProject/contracts/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0xaa2cf35177f37a9af9c975a973c813c5520be56ccee3a39b6c9883d4781cd072\",\"urls\":[\"bzzr://2244d517ff73299ad9b6c9dcb7d0788e5e452d8b1624d3027c1fb152135de8f4\"]},\"/Users/dvm/Documents/Development/WorkspaceEB/TFE/TruffleProject/contracts/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xc8a7f15fa44eb10057f8bcb58418d3aed6f5267d211d18f93f3d4e0293e3da44\",\"urls\":[\"bzzr://8825e2508348b01a091ff47b8525e583b6e5604f6679684f805d67a9a6a2a7e9\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516040806107db83398101604052805160209091015161003c8282640100000000610043810204565b5050610114565b600160a060020a038216151561005857600080fd5b60025461007290826401000000006106736100fb82021704565b600255600160a060020a0382166000908152602081905260409020546100a590826401000000006106736100fb82021704565b600160a060020a0383166000818152602081815260408083209490945583518581529351929391927fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef9281900390910190a35050565b60008282018381101561010d57600080fd5b9392505050565b6106b8806101236000396000f3006080604052600436106100a35763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166306fdde0381146100a8578063095ea7b31461013257806318160ddd1461016a57806323b872dd1461019157806339509351146101bb57806370a08231146101df57806395d89b4114610200578063a457c2d714610215578063a9059cbb14610239578063dd62ed3e1461025d575b600080fd5b3480156100b457600080fd5b506100bd610284565b6040805160208082528351818301528351919283929083019185019080838360005b838110156100f75781810151838201526020016100df565b50505050905090810190601f1680156101245780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561013e57600080fd5b50610156600160a060020a03600435166024356102bb565b604080519115158252519081900360200190f35b34801561017657600080fd5b5061017f610339565b60408051918252519081900360200190f35b34801561019d57600080fd5b50610156600160a060020a036004358116906024351660443561033f565b3480156101c757600080fd5b50610156600160a060020a03600435166024356103dc565b3480156101eb57600080fd5b5061017f600160a060020a036004351661048c565b34801561020c57600080fd5b506100bd6104a7565b34801561022157600080fd5b50610156600160a060020a03600435166024356104de565b34801561024557600080fd5b50610156600160a060020a0360043516602435610529565b34801561026957600080fd5b5061017f600160a060020a036004358116906024351661053f565b60408051808201909152600681527f4441626f6e6f0000000000000000000000000000000000000000000000000000602082015281565b6000600160a060020a03831615156102d257600080fd5b336000818152600160209081526040808320600160a060020a03881680855290835292819020869055805186815290519293927f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925929181900390910190a350600192915050565b60025490565b600160a060020a038316600090815260016020908152604080832033845290915281205482111561036f57600080fd5b600160a060020a03841660009081526001602090815260408083203384529091529020546103a3908363ffffffff61056a16565b600160a060020a03851660009081526001602090815260408083203384529091529020556103d2848484610581565b5060019392505050565b6000600160a060020a03831615156103f357600080fd5b336000908152600160209081526040808320600160a060020a0387168452909152902054610427908363ffffffff61067316565b336000818152600160209081526040808320600160a060020a0389168085529083529281902085905580519485525191937f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925929081900390910190a350600192915050565b600160a060020a031660009081526020819052604090205490565b60408051808201909152600381527f4441420000000000000000000000000000000000000000000000000000000000602082015281565b6000600160a060020a03831615156104f557600080fd5b336000908152600160209081526040808320600160a060020a0387168452909152902054610427908363ffffffff61056a16565b6000610536338484610581565b50600192915050565b600160a060020a03918216600090815260016020908152604080832093909416825291909152205490565b6000808383111561057a57600080fd5b5050900390565b600160a060020a0383166000908152602081905260409020548111156105a657600080fd5b600160a060020a03821615156105bb57600080fd5b600160a060020a0383166000908152602081905260409020546105e4908263ffffffff61056a16565b600160a060020a038085166000908152602081905260408082209390935590841681522054610619908263ffffffff61067316565b600160a060020a038084166000818152602081815260409182902094909455805185815290519193928716927fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef92918290030190a3505050565b60008282018381101561068557600080fd5b93925050505600a165627a7a723058201eaa184995afa79e37f531b5e7e13bd6c171669a91ece523a10a6e1e80d2f2580029",
+  "deployedBytecode": "0x6080604052600436106100a35763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166306fdde0381146100a8578063095ea7b31461013257806318160ddd1461016a57806323b872dd1461019157806339509351146101bb57806370a08231146101df57806395d89b4114610200578063a457c2d714610215578063a9059cbb14610239578063dd62ed3e1461025d575b600080fd5b3480156100b457600080fd5b506100bd610284565b6040805160208082528351818301528351919283929083019185019080838360005b838110156100f75781810151838201526020016100df565b50505050905090810190601f1680156101245780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561013e57600080fd5b50610156600160a060020a03600435166024356102bb565b604080519115158252519081900360200190f35b34801561017657600080fd5b5061017f610339565b60408051918252519081900360200190f35b34801561019d57600080fd5b50610156600160a060020a036004358116906024351660443561033f565b3480156101c757600080fd5b50610156600160a060020a03600435166024356103dc565b3480156101eb57600080fd5b5061017f600160a060020a036004351661048c565b34801561020c57600080fd5b506100bd6104a7565b34801561022157600080fd5b50610156600160a060020a03600435166024356104de565b34801561024557600080fd5b50610156600160a060020a0360043516602435610529565b34801561026957600080fd5b5061017f600160a060020a036004358116906024351661053f565b60408051808201909152600681527f4441626f6e6f0000000000000000000000000000000000000000000000000000602082015281565b6000600160a060020a03831615156102d257600080fd5b336000818152600160209081526040808320600160a060020a03881680855290835292819020869055805186815290519293927f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925929181900390910190a350600192915050565b60025490565b600160a060020a038316600090815260016020908152604080832033845290915281205482111561036f57600080fd5b600160a060020a03841660009081526001602090815260408083203384529091529020546103a3908363ffffffff61056a16565b600160a060020a03851660009081526001602090815260408083203384529091529020556103d2848484610581565b5060019392505050565b6000600160a060020a03831615156103f357600080fd5b336000908152600160209081526040808320600160a060020a0387168452909152902054610427908363ffffffff61067316565b336000818152600160209081526040808320600160a060020a0389168085529083529281902085905580519485525191937f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925929081900390910190a350600192915050565b600160a060020a031660009081526020819052604090205490565b60408051808201909152600381527f4441420000000000000000000000000000000000000000000000000000000000602082015281565b6000600160a060020a03831615156104f557600080fd5b336000908152600160209081526040808320600160a060020a0387168452909152902054610427908363ffffffff61056a16565b6000610536338484610581565b50600192915050565b600160a060020a03918216600090815260016020908152604080832093909416825291909152205490565b6000808383111561057a57600080fd5b5050900390565b600160a060020a0383166000908152602081905260409020548111156105a657600080fd5b600160a060020a03821615156105bb57600080fd5b600160a060020a0383166000908152602081905260409020546105e4908263ffffffff61056a16565b600160a060020a038085166000908152602081905260408082209390935590841681522054610619908263ffffffff61067316565b600160a060020a038084166000818152602081815260409182902094909455805185815290519193928716927fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef92918290030190a3505050565b60008282018381101561068557600080fd5b93925050505600a165627a7a723058201eaa184995afa79e37f531b5e7e13bd6c171669a91ece523a10a6e1e80d2f2580029",
+  "sourceMap": "71:236:1:-;;;195:110;8:9:-1;5:2;;;30:1;27;20:12;5:2;195:110:1;;;;;;;;;;;;;;;;;;;267:31;195:110;;267:5;;;;:31;:::i;:::-;195:110;;71:236;;5541:235:12;-1:-1:-1;;;;;5611:12:12;;;;5603:21;;;;;;5645:12;;:23;;5662:5;5645:16;;;;;;:23;:::i;:::-;5630:12;:38;-1:-1:-1;;;;;5695:18:12;;:9;:18;;;;;;;;;;;:29;;5718:5;5695:22;;;;;;:29;:::i;:::-;-1:-1:-1;;;;;5674:18:12;;:9;:18;;;;;;;;;;;:50;;;;5735:36;;;;;;;5674:18;;:9;;5735:36;;;;;;;;;;5541:235;;:::o;1272:131:11:-;1330:7;1357:5;;;1376:6;;;;1368:15;;;;;;1397:1;1272:131;-1:-1:-1;;;1272:131:11:o;71:236:1:-;;;;;;;",
+  "deployedSourceMap": "71:236:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;107:38;;8:9:-1;5:2;;;30:1;27;20:12;5:2;107:38:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:100:-1;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;107:38:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2380:220:12;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;2380:220:12;-1:-1:-1;;;;;2380:220:12;;;;;;;;;;;;;;;;;;;;;;;;;640:83;;8:9:-1;5:2;;;30:1;27;20:12;5:2;640:83:12;;;;;;;;;;;;;;;;;;;;2872:288;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;2872:288:12;-1:-1:-1;;;;;2872:288:12;;;;;;;;;;;;3611:330;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;3611:330:12;-1:-1:-1;;;;;3611:330:12;;;;;;;920:98;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;920:98:12;-1:-1:-1;;;;;920:98:12;;;;;151:37:1;;8:9:-1;5:2;;;30:1;27;20:12;5:2;151:37:1;;;;4397:340:12;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;4397:340:12;-1:-1:-1;;;;;4397:340:12;;;;;;;1637:127;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;1637:127:12;-1:-1:-1;;;;;1637:127:12;;;;;;;1335:150;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;1335:150:12;-1:-1:-1;;;;;1335:150:12;;;;;;;;;;107:38:1;;;;;;;;;;;;;;;;;;;:::o;2380:220:12:-;2445:4;-1:-1:-1;;;;;2465:21:12;;;;2457:30;;;;;;2503:10;2494:20;;;;:8;:20;;;;;;;;-1:-1:-1;;;;;2494:29:12;;;;;;;;;;;;:37;;;2542:36;;;;;;;2494:29;;2503:10;2542:36;;;;;;;;;;;-1:-1:-1;2591:4:12;2380:220;;;;:::o;640:83::-;706:12;;640:83;:::o;2872:288::-;-1:-1:-1;;;;;3006:14:12;;2975:4;3006:14;;;-1:-1:-1;3006:14:12;;;;;;;;3021:10;3006:26;;;;;;;;2997:35;;;2989:44;;;;;;-1:-1:-1;;;;;3069:14:12;;;;;;-1:-1:-1;3069:14:12;;;;;;;;3084:10;3069:26;;;;;;;;:37;;3100:5;3069:30;:37::i;:::-;-1:-1:-1;;;;;3040:14:12;;;;;;-1:-1:-1;3040:14:12;;;;;;;;3055:10;3040:26;;;;;;;:66;3112:26;3040:14;3128:2;3132:5;3112:9;:26::i;:::-;-1:-1:-1;3151:4:12;2872:288;;;;;:::o;3611:330::-;3711:4;-1:-1:-1;;;;;3733:21:12;;;;3725:30;;;;;;3811:10;3802:20;;;;:8;:20;;;;;;;;-1:-1:-1;;;;;3802:29:12;;;;;;;;;;:45;;3836:10;3802:33;:45::i;:::-;3771:10;3762:20;;;;:8;:20;;;;;;;;-1:-1:-1;;;;;3762:29:12;;;;;;;;;;;;:86;;;3859:60;;;;;;3762:29;;3859:60;;;;;;;;;;;-1:-1:-1;3932:4:12;3611:330;;;;:::o;920:98::-;-1:-1:-1;;;;;997:16:12;975:7;997:16;;;;;;;;;;;;920:98::o;151:37:1:-;;;;;;;;;;;;;;;;;;;:::o;4397:340:12:-;4502:4;-1:-1:-1;;;;;4524:21:12;;;;4516:30;;;;;;4602:10;4593:20;;;;:8;:20;;;;;;;;-1:-1:-1;;;;;4593:29:12;;;;;;;;;;:50;;4627:15;4593:33;:50::i;1637:127::-;1698:4;1710:32;1720:10;1732:2;1736:5;1710:9;:32::i;:::-;-1:-1:-1;1755:4:12;1637:127;;;;:::o;1335:150::-;-1:-1:-1;;;;;1456:15:12;;;1432:7;1456:15;;;-1:-1:-1;1456:15:12;;;;;;;;:24;;;;;;;;;;;;;1335:150::o;1078:131:11:-;1136:7;;1159:6;;;;1151:15;;;;;;-1:-1:-1;;1184:5:11;;;1078:131::o;4937:277:12:-;-1:-1:-1;;;;;5029:15:12;;:9;:15;;;;;;;;;;;5020:24;;;5012:33;;;;;;-1:-1:-1;;;;;5059:16:12;;;;5051:25;;;;;;-1:-1:-1;;;;;5101:15:12;;:9;:15;;;;;;;;;;;:26;;5121:5;5101:19;:26::i;:::-;-1:-1:-1;;;;;5083:15:12;;;:9;:15;;;;;;;;;;;:44;;;;5149:13;;;;;;;:24;;5167:5;5149:17;:24::i;:::-;-1:-1:-1;;;;;5133:13:12;;;:9;:13;;;;;;;;;;;;:40;;;;5184:25;;;;;;;5133:13;;5184:25;;;;;;;;;;;;;4937:277;;;:::o;1272:131:11:-;1330:7;1357:5;;;1376:6;;;;1368:15;;;;;;1397:1;1272:131;-1:-1:-1;;;1272:131:11:o",
+  "source": "pragma solidity ^0.4.24;\n\nimport \"./contracts/token/ERC20/ERC20.sol\";\n\ncontract DAbono is ERC20 {\n    \n    string public constant name = \"DAbono\";\n    string public constant symbol = \"DAB\";\n\n    constructor (address _temporadaOwner, uint256 _amount) public {\n        _mint(_temporadaOwner, _amount);\n    }\n}",
+  "sourcePath": "/Users/dvm/Documents/Development/WorkspaceEB/TFE/TruffleProject/contracts/DAbono.sol",
+  "ast": {
+    "absolutePath": "/Users/dvm/Documents/Development/WorkspaceEB/TFE/TruffleProject/contracts/DAbono.sol",
+    "exportedSymbols": {
+      "DAbono": [
+        205
+      ]
+    },
+    "id": 206,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 182,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "absolutePath": "/Users/dvm/Documents/Development/WorkspaceEB/TFE/TruffleProject/contracts/contracts/token/ERC20/ERC20.sol",
+        "file": "./contracts/token/ERC20/ERC20.sol",
+        "id": 183,
+        "nodeType": "ImportDirective",
+        "scope": 206,
+        "sourceUnit": 1770,
+        "src": "26:43:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 184,
+              "name": "ERC20",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1769,
+              "src": "90:5:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ERC20_$1769",
+                "typeString": "contract ERC20"
+              }
+            },
+            "id": 185,
+            "nodeType": "InheritanceSpecifier",
+            "src": "90:5:1"
+          }
+        ],
+        "contractDependencies": [
+          1769,
+          1838
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 205,
+        "linearizedBaseContracts": [
+          205,
+          1769,
+          1838
+        ],
+        "name": "DAbono",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": true,
+            "id": 188,
+            "name": "name",
+            "nodeType": "VariableDeclaration",
+            "scope": 205,
+            "src": "107:38:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 186,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "107:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "4441626f6e6f",
+              "id": 187,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "137:8:1",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_2730e0b955f4aa7cbc7cf5f07d3a2cb2c8d1fa5a520d231d12263da928c932b2",
+                "typeString": "literal_string \"DAbono\""
+              },
+              "value": "DAbono"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": true,
+            "id": 191,
+            "name": "symbol",
+            "nodeType": "VariableDeclaration",
+            "scope": 205,
+            "src": "151:37:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 189,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "151:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "444142",
+              "id": 190,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "183:5:1",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_90373cb7a73091ad4237c72e6a5d2fe840271230b5116c961050a9ab8861c825",
+                "typeString": "literal_string \"DAB\""
+              },
+              "value": "DAB"
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 203,
+              "nodeType": "Block",
+              "src": "257:48:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 199,
+                        "name": "_temporadaOwner",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 193,
+                        "src": "273:15:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 200,
+                        "name": "_amount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 195,
+                        "src": "290:7:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 198,
+                      "name": "_mint",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1679,
+                      "src": "267:5:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$returns$__$",
+                        "typeString": "function (address,uint256)"
+                      }
+                    },
+                    "id": 201,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "267:31:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 202,
+                  "nodeType": "ExpressionStatement",
+                  "src": "267:31:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 204,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 196,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 193,
+                  "name": "_temporadaOwner",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 204,
+                  "src": "208:23:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 192,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "208:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 195,
+                  "name": "_amount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 204,
+                  "src": "233:15:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 194,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "233:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "207:42:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 197,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "257:0:1"
+            },
+            "scope": 205,
+            "src": "195:110:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 206,
+        "src": "71:236:1"
+      }
+    ],
+    "src": "0:307:1"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/Users/dvm/Documents/Development/WorkspaceEB/TFE/TruffleProject/contracts/DAbono.sol",
+      "exportedSymbols": {
+        "DAbono": [
+          205
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".24"
+          ]
+        },
+        "id": 182,
+        "name": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 1770,
+          "absolutePath": "/Users/dvm/Documents/Development/WorkspaceEB/TFE/TruffleProject/contracts/contracts/token/ERC20/ERC20.sol",
+          "file": "./contracts/token/ERC20/ERC20.sol",
+          "scope": 206,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 183,
+        "name": "ImportDirective",
+        "src": "26:43:1"
+      },
+      {
+        "attributes": {
+          "contractDependencies": [
+            1769,
+            1838
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            205,
+            1769,
+            1838
+          ],
+          "name": "DAbono",
+          "scope": 206
+        },
+        "children": [
+          {
+            "attributes": {
+              "arguments": null
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "ERC20",
+                  "referencedDeclaration": 1769,
+                  "type": "contract ERC20"
+                },
+                "id": 184,
+                "name": "UserDefinedTypeName",
+                "src": "90:5:1"
+              }
+            ],
+            "id": 185,
+            "name": "InheritanceSpecifier",
+            "src": "90:5:1"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "name",
+              "scope": 205,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "string",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "string",
+                  "type": "string"
+                },
+                "id": 186,
+                "name": "ElementaryTypeName",
+                "src": "107:6:1"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "4441626f6e6f",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "string",
+                  "type": "literal_string \"DAbono\"",
+                  "value": "DAbono"
+                },
+                "id": 187,
+                "name": "Literal",
+                "src": "137:8:1"
+              }
+            ],
+            "id": 188,
+            "name": "VariableDeclaration",
+            "src": "107:38:1"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "symbol",
+              "scope": 205,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "string",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "string",
+                  "type": "string"
+                },
+                "id": 189,
+                "name": "ElementaryTypeName",
+                "src": "151:6:1"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "444142",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "string",
+                  "type": "literal_string \"DAB\"",
+                  "value": "DAB"
+                },
+                "id": 190,
+                "name": "Literal",
+                "src": "183:5:1"
+              }
+            ],
+            "id": 191,
+            "name": "VariableDeclaration",
+            "src": "151:37:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "payable": false,
+              "scope": 205,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_temporadaOwner",
+                      "scope": 204,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 192,
+                        "name": "ElementaryTypeName",
+                        "src": "208:7:1"
+                      }
+                    ],
+                    "id": 193,
+                    "name": "VariableDeclaration",
+                    "src": "208:23:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_amount",
+                      "scope": 204,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 194,
+                        "name": "ElementaryTypeName",
+                        "src": "233:7:1"
+                      }
+                    ],
+                    "id": 195,
+                    "name": "VariableDeclaration",
+                    "src": "233:15:1"
+                  }
+                ],
+                "id": 196,
+                "name": "ParameterList",
+                "src": "207:42:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 197,
+                "name": "ParameterList",
+                "src": "257:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                },
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 1679,
+                              "type": "function (address,uint256)",
+                              "value": "_mint"
+                            },
+                            "id": 198,
+                            "name": "Identifier",
+                            "src": "267:5:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 193,
+                              "type": "address",
+                              "value": "_temporadaOwner"
+                            },
+                            "id": 199,
+                            "name": "Identifier",
+                            "src": "273:15:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 195,
+                              "type": "uint256",
+                              "value": "_amount"
+                            },
+                            "id": 200,
+                            "name": "Identifier",
+                            "src": "290:7:1"
+                          }
+                        ],
+                        "id": 201,
+                        "name": "FunctionCall",
+                        "src": "267:31:1"
+                      }
+                    ],
+                    "id": 202,
+                    "name": "ExpressionStatement",
+                    "src": "267:31:1"
+                  }
+                ],
+                "id": 203,
+                "name": "Block",
+                "src": "257:48:1"
+              }
+            ],
+            "id": 204,
+            "name": "FunctionDefinition",
+            "src": "195:110:1"
+          }
+        ],
+        "id": 205,
+        "name": "ContractDefinition",
+        "src": "71:236:1"
+      }
+    ],
+    "id": 206,
+    "name": "SourceUnit",
+    "src": "0:307:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-03-18T18:49:21.765Z",
+  "devdoc": {
+    "methods": {
+      "allowance(address,address)": {
+        "details": "Function to check the amount of tokens that an owner allowed to a spender.",
+        "params": {
+          "owner": "address The address which owns the funds.",
+          "spender": "address The address which will spend the funds."
+        },
+        "return": "A uint256 specifying the amount of tokens still available for the spender."
+      },
+      "approve(address,uint256)": {
+        "details": "Approve the passed address to spend the specified amount of tokens on behalf of msg.sender. Beware that changing an allowance with this method brings the risk that someone may use both the old and the new allowance by unfortunate transaction ordering. One possible solution to mitigate this race condition is to first reduce the spender's allowance to 0 and set the desired value afterwards: https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729",
+        "params": {
+          "spender": "The address which will spend the funds.",
+          "value": "The amount of tokens to be spent."
+        }
+      },
+      "balanceOf(address)": {
+        "details": "Gets the balance of the specified address.",
+        "params": {
+          "owner": "The address to query the balance of."
+        },
+        "return": "An uint256 representing the amount owned by the passed address."
+      },
+      "decreaseAllowance(address,uint256)": {
+        "details": "Decrease the amount of tokens that an owner allowed to a spender. approve should be called when allowed_[_spender] == 0. To decrement allowed value is better to use this function to avoid 2 calls (and wait until the first transaction is mined) From MonolithDAO Token.sol",
+        "params": {
+          "spender": "The address which will spend the funds.",
+          "subtractedValue": "The amount of tokens to decrease the allowance by."
+        }
+      },
+      "increaseAllowance(address,uint256)": {
+        "details": "Increase the amount of tokens that an owner allowed to a spender. approve should be called when allowed_[_spender] == 0. To increment allowed value is better to use this function to avoid 2 calls (and wait until the first transaction is mined) From MonolithDAO Token.sol",
+        "params": {
+          "addedValue": "The amount of tokens to increase the allowance by.",
+          "spender": "The address which will spend the funds."
+        }
+      },
+      "totalSupply()": {
+        "details": "Total number of tokens in existence"
+      },
+      "transfer(address,uint256)": {
+        "details": "Transfer token for a specified address",
+        "params": {
+          "to": "The address to transfer to.",
+          "value": "The amount to be transferred."
+        }
+      },
+      "transferFrom(address,address,uint256)": {
+        "details": "Transfer tokens from one address to another",
+        "params": {
+          "from": "address The address which you want to send tokens from",
+          "to": "address The address which you want to transfer to",
+          "value": "uint256 the amount of tokens to be transferred"
+        }
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
